@@ -7,7 +7,7 @@
 - [ ] Create at least one basic code 
 - [ ] Create necessary edits and changes to files 
 - [ ] Create a sample quiz for project 
-- [x] Collect data base of perfumes used for the software 
+- [ ] Collect data base of perfumes used for the software 
 - [ ] Begin creating webpage 
 - [ ] Design and edit page 
 - [ ] Add final edits as necessary
