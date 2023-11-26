@@ -13,7 +13,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.compose import ColumnTransformer
 
-df = pd.read_csv("/Users/amandarajda/Perfume Pocket/Perfumes_Recommender/Datasets/final_df.csv")
+df = pd.read_csv("/Users/amandarajda/desktop/final_df.csv")
 df.info()
 df.shape
 df.head()
