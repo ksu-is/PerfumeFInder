@@ -24,19 +24,15 @@ def get_index(Name):
 def get_title_from_index(index):
     return df[df.index == index]["Name"].values[0]
 
-# fill in any NaNs 
 df['Description'].fillna('')
 
-#step1: create recommendation function
 def get_recommendations_2(x):
-#step2: creat count matrix 
+
     cv = CountVectorizer()
     count_matrix = cv.fit_transform(df['Description'])
-
-#step3: cosine similarity 
+ 
     cosine_sim = cosine_similarity(count_matrix)
 
-#step4: getting the index of the recommended perfume 
     perfume_index = get_index(x)
     similar_perfumes = list(enumerate(cosine_sim[perfume_index]))
     sorted_similar = sorted(similar_perfumes,key=lambda x:x[1],reverse=True)[1:]
